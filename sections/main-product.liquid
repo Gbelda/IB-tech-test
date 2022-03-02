@@ -217,9 +217,9 @@
             {%- endif -%}
         
 
-           {% include 'countdown-timer', title=product.title
+           {% include 'countdown-timer',
             	end_date: "April 31, 2022" 
-            	description: "You have limited time to buy {{ title }}",
+            	description: "You have limited time to buy", {{ product.title }}
 			%} 
         
         
