@@ -219,7 +219,9 @@
 
            {% include 'countdown-timer',
             	end_date: "April 31, 2022" 
-            	description: "You have limited time to buy",
+            	description: "You have limited time to buy"
+        		{%- when 'title' -%}
+        		{{ product.title | escape }}
 			%} 
         
         
