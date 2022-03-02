@@ -218,11 +218,11 @@
         
             {% include 'countdown-timer', 
 
-   			title: "Item Available until:", 
-        
-   			end_date: "April 31, 2022" 
+            
+            end_date: "April 31, 2022" 
+            description: "“You have limited time to buy" {{ {{ product.title | escape }} }}, 
 
- 			%} 
+ 			      %} 
         
         
             <div {{ block.shopify_attributes }}>
