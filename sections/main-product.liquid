@@ -215,15 +215,12 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
-        
 			{%- when 'title' -%}
            		{% render 'countdown-timer',
                 	product:{{product.title}}
            			end_date: "April 31, 2022" 
             		description: "You have limited time to buy"
 				%} 
-        
-        
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
