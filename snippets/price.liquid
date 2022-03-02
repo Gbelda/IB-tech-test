@@ -52,13 +52,6 @@ endif
         {{ money_price }}
       </span>
     </div>
-    {% include 'countdown-timer',
-
-    title: "Item Available until:",
-
-    end_date: "May 31, 2022"
-
-    %}
     <div class="price__sale">
       {%- unless product.price_varies == false and
       product.compare_at_price_varies %}
