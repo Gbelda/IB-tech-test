@@ -217,10 +217,10 @@
             {%- endif -%}
         
             {% include 'countdown-timer', 
-				          {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
-              {{ product.title | escape }}
-            </h1>
+				{%- when 'title' -%}
+            	<span {{ block.shopify_attributes }}>
+              	{{ product.title | escape }}
+            </span>
             
             end_date: "April 31, 2022" 
             description: "You have limited time to buy" {{ product.title | escape }}, 
